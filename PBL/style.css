@@ -1,0 +1,23 @@
+span{
+    color: #ffb931;
+}
+.logo{
+    margin: 5px;
+}
+h1{
+    margin: 5px;
+    font-family: "Quicksand";
+}
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+.links{
+    text-decoration: none;
+    color: white;
+}
+.link{
+    text-decoration: none;
+    color: blue;
+}
