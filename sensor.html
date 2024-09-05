@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ultrasonic Sensor Data</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Ultrasonic Sensor Data</h1>
+    <div id="distance"></div>
+
+    <script>
+        $(document).ready(function() {
+            setInterval(function() {
+                $.get('/data', function(data) {
+                    $('#distance').text('Distance: ' + data + '');
+                });
+            }, 1000);
+        });
+    </script> 
+</body>
+</html>
